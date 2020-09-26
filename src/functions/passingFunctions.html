@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var stdIds = [12, 23, 23, 24, 3, 22];
+      stdIds.sort((num1, num2) => num1 - num2);
+
+      document.write(stdIds + "<br/>");
+
+      //   function addSquares(a, b) {
+      //     function square(x) {
+      //       return x * x;
+      //     }
+      //     return square(a) + square(b);
+      //   }
+
+      const addSquares1 = (a, b) => {
+        const square = (x) => x * x;
+        return square(a) + square(b);
+      };
+
+      const addSquares = (a, b) => {
+        function square(x) {
+          return x * x;
+        }
+        return square1(a) + square1(b);
+      };
+
+      const square1 = function (x) {
+        return x * x;
+      };
+      document.write(addSquares(2, 3) + "<br/>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //declaration way
+      evenOrOdd1(10);
+      evenOrOdd1(11);
+
+      function evenOrOdd1(num) {
+        if (num % 2 === 0) {
+          document.write("given number is even" + "<br/>");
+        } else {
+          document.write("given number is odd" + "<br/>");
+        }
+      }
+
+      //expression way
+      var evenOrOdd2 = function (num) {
+        if (num % 2 === 0) {
+          document.write("given number is even" + "<br/>");
+        } else {
+          document.write("given number is odd" + "<br/>");
+        }
+      };
+
+      evenOrOdd2(10);
+      evenOrOdd2(11);
+
+      //variable params
+      function variableParams(num) {
+        document.write(arguments.length + "<br/>");
+        document.write(arguments[2] + "<br/>");
+        document.write(variableParams.length + "<br/>");
+      }
+
+      const zz= variableParams;
+      document.write(zz(10, 20, 30, 40) + "<br/>");
+    </script>
+  </body>
+</html>
